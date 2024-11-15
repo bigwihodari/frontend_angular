@@ -1,0 +1,111 @@
+/* Centrage de l'élément principal */
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f2f2f2; /* Couleur de fond de la page */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Conteneur principal pour le logo et le formulaire */
+.authentication {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Ombre autour du formulaire */
+}
+
+/* Logo en haut */
+.logo-container {
+  width: 100%;
+  background-color: #425B8a; /* Couleur de fond du logo */
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-container img {
+  max-width: 100%;
+  max-height: 120px; /* Limite de la hauteur du logo */
+  object-fit: contain;
+}
+
+/* Formulaire de connexion */
+.auth_form {
+  width: 100%;
+  padding: 20px;
+  background-color: #c2c9db; /* Couleur de fond du formulaire */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Titre du formulaire */
+.auth_form .title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Labels des champs */
+.auth_form label {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Champs de saisie */
+.auth_form input[type="text"],
+.auth_form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Bouton de connexion */
+.auth_form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #3b5998;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth_form input[type="submit"]:hover {
+  background-color: #2e4477;
+}
+
+/* Responsivité */
+@media (max-width: 320px) {
+  .authentication {
+    max-width: 90%; /* Ajustement pour les petits écrans */
+  }
+
+  .auth_form .title {
+    font-size: 20px;
+  }
+
+  .auth_form input[type="text"],
+  .auth_form input[type="password"],
+  .auth_form input[type="submit"] {
+    font-size: 14px;
+  }
+}
