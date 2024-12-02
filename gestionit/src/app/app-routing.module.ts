@@ -6,7 +6,7 @@ import {AuthentificationComponent} from "./authentification/authentification.com
 const routes: Routes = [
   {path:'auth', component: AuthentificationComponent},
   {path:'device_main_page', component: DeviceMainPageComponent},
-  //{path:'', redirectTo:'/auth', pathMatch:'full'},
+  {path:'', redirectTo:'/auth', pathMatch:'full'},
 ];
 
 @NgModule({
