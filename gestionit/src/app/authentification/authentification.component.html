@@ -1,15 +1,17 @@
 <div class="authentication">
   <div class="logo-container">
-    <img src="../../assets/image/logo_gestionit.png" alt="Girl in a jacket">
+    <img src="../../assets/image/logo_gestionit.png" alt="alt image">
   </div>
   <div class="auth_form">
-    <form action="#">
+    <form (ngSubmit)="onSubmit()">
       <p>Connexion</p>
       <label for="email">Email</label><br>
-      <input type="text" id="email" name="email"><br>
+      <input type="text" id="email" name="email" [(ngModel)]="credentials.email" /><br>
       <label for="mot_de_passe">Mot de passe</label><br>
-      <input type="password" id="mot_de_passe" name="mot_de_passe"><br>
+      <input type="password" id="mot_de_passe" name="mot_de_passe" [(ngModel)]="credentials.password" /><br>
       <input type="submit" value="Login">
+      <div *ngIf="errorMessage != null">{{errorMessage}}</div>
     </form>
   </div>
 </div>
+
