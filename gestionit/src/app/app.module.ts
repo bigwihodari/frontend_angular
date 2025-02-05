@@ -7,12 +7,16 @@ import { AuthentificationComponent } from './authentification/authentification.c
 import { DeviceMainPageComponent } from './device-main-page/device-main-page.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthentificationComponent,
-    DeviceMainPageComponent
+    DeviceMainPageComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -16,11 +16,14 @@ export class AuthentificationComponent {
 
   onSubmit(): void {
     this.authService.login(this.credentials).subscribe({
-      next: () => {
+      next: (data) => {
         this.router.navigate(['/device_main_page']);
+        console.log(data);
       },
       error: (err) => {
         this.errorMessage ="Email utilisateur ou mot de passe incorrect.";
+        console.log(err);
+
       }
     });
 

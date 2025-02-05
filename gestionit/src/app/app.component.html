@@ -1,6 +1,8 @@
-<div class="app_auth" *ngIf="!isLoggedIn; else connectedBlock">
-  <app-authentification></app-authentification>
-</div>
-<ng-template #connectedBlock>
-  <router-outlet></router-outlet>
-</ng-template>
+
+<app-navbar *ngIf="isLoggedIn"></app-navbar>
+<router-outlet></router-outlet>
+<app-footer *ngIf="isLoggedIn"></app-footer>
+
+
+
+

@@ -11,6 +11,7 @@ export class AppComponent {
   isLoggedIn = false;
 
   constructor(private authService: AuthServiceService) {
-    this.isLoggedIn = authService.isLoggedIn();
+    //this.isLoggedIn = authService.isLoggedIn();
+    //this.authService.
   }
 }

@@ -1,0 +1,87 @@
+.menu-bar {
+  font-family: Arial, sans-serif;
+}
+
+/* Première ligne : Gestion IT et champ de recherche */
+.line-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.gestion-it {
+  background-color: #2f4f85;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.recherche {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 200px;
+  color: #333;
+}
+
+/* Deuxième ligne : Liens espacés équitablement */
+.line-2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #2f4f85;
+  padding: 10px;
+}
+
+.line-2 a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+.line-2 a:hover {
+  background-color: #e0e0e0;
+  color: #2f4f85;
+}
+
+/* Troisième ligne : Libellés et champs de filtre */
+.line-3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espace entre label et champ */
+}
+
+.filter-item label {
+  font-size: 14px;
+  color: #333;
+  white-space: nowrap; /* Évite que le label soit coupé */
+}
+
+.filter-item select,
+.filter-item input {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 150px;
+}
